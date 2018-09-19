@@ -1,8 +1,8 @@
 from rle import rle_encoder
 from rle import rle_decoder
 
-%% from hypothesis import given, settings
-%% from hypothesis.strategies import text
+# from hypothesis import given, settings
+# from hypothesis.strategies import text
 
 def test_simple():
     assert rle_encoder("bbbkkk") == "b3k3"
@@ -17,8 +17,8 @@ def test_advanced_decode():
 
 
 
-%% @given(text())
-%% @settings(max_examples=500)
-%% def test_hypo(x):
-    %% print x 
-    %% assert rle_decoder(rle_encoder(x)) == x
+#@given(text())
+#@settings(max_examples=500)
+#def test_hypo(x):
+    #print x
+    #assert rle_decoder(rle_encoder(x)) == x
